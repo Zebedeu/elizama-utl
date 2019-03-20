@@ -1,0 +1,29 @@
+
+/* ============= Contact Page =========== */
+.wpcf7{ margin:30px 0 0; padding:0;}
+.wpcf7 input[type="text"], .wpcf7 input[type="tel"], .wpcf7 input[type="email"]{ width:40%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:35px; padding:0 15px; color:#797979; margin-bottom:0;}
+.wpcf7 textarea{width:60%; border:1px solid #cccccc; box-shadow:inset 1px 1px 2px #ccc; height:150px; color:#797979; margin-bottom:25px; font:12px arial; padding:10px; padding-right:0;}
+.wpcf7 input[type="submit"]{ width:auto; border:none; cursor:pointer; text-transform:uppercase; font:18px 'Oswald',san-serif; color:#ffffff; padding:10px 40px; border-radius:3px;}
+
+/* ============ colophon ============== */
+#colophon{ background-color:#000000; color:#ffffff;}
+#colophon .cols h2{text-transform:uppercase; margin-bottom:15px; font:18px 'Oswald',san-serif; color:#e7e7e7;}
+#colophon .cols .add-icon{ width:24px; height:24px; background-image:url(../images/location-icon.png); background-repeat:no-repeat; background-position: center center; float:left; border-radius:13px; margin-top:21px;}
+#colophon .cols .add-content{ float:right; margin:0; padding:0; width:82%; margin-top:14px;}
+#colophon .cols .phone-icon{ width:24px; height:24px; background-image:url(../images/call-icon.png); background-repeat:no-repeat; background-position: center center;float:left; border-radius:13px; margin-top:14px;}
+#colophon .cols .phone-content{ float:right; margin:0; padding:0; width:82%; margin-top:14px;}
+#colophon .cols .mail-icon{ width:24px; height:24px; background-image:url(../images/icon-mail.png); background-repeat:no-repeat; background-position: center center; float:left; border-radius:13px; margin-top:14px;}
+#colophon .cols .mail-content{ float:right; margin:0; padding:0; width:82%; margin-top:14px;}
+#colophon .cols a{ color:#ffffff;}
+#colophon .cols ul{ margin:0 0 0 1px; padding:0;}
+#colophon .cols ul li{font:16px 'Roboto Condensed',san-serif; padding-bottom:15px}
+
+.social span{ display:inline; vertical-align:-moz-middle-with-baseline;}
+.social a{ color:#eeeded; display:block; clear:both;}
+.social a:hover{ color:#7bb302; }
+.social .icon{width:100%; margin:0 1px 1px 0; padding:5px 1px 20px 5px; width:28px; height:20px; border:1px solid #ffffff; background-repeat:no-repeat; background-position:center center; float:left; border-radius:13px;}
+/* ======== Social Icons =========== */
+
+#copyright{ background-color:#272727; padding:15px 0; color:#6d6d6d;}
+#copyright a{ color:#6d6d6d;}
+
