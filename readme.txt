@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.9
 Tested up to: 5.1.1
-Stable tag: 0.0.1
+Stable tag: 0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,8 +29,11 @@ elizama' includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0  =
+= 0.1  =
 * Initial release
+
+= 0.2 =
+* Misc changes.
 
 == Credits ==
 

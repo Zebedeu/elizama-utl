@@ -117,6 +117,7 @@
             <?php 
             /* translators: 1: Proudly powered by */
             printf(esc_html__('Theme: %1$s by %2$s.', 'elizama'), 'elizama', '<a href="https://github.com/Zebedeu/elizama" rel="designer">Marcio Zebedeu</a>'); ?><br />
+            <?php echo get_theme_mod('footer_right', esc_url( __('<a href="https://github.com/Zebedeu/elizama">Home</a> | <a href="http://artphoweb.com/contactos/">Contact Us</a> | <a href="#">Sitemap</a>', 'elizama'))); ?></p>
 
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
