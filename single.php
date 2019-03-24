@@ -3,7 +3,7 @@
  * The template for displaying all single posts.
  *
  * @see https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 get_header();
 ?>

@@ -1,6 +1,6 @@
 <?php
 /**
- * SKT elizama' Theme Customizer.
+ * EL elizama' Theme Customizer.
  *
  *
  * @param WP_Customize_Manager $wp_customize theme Customizer object
@@ -64,7 +64,7 @@ function el_customize_register($wp_customize)
         'title' => __('Logo (PRO Version)', 'elizama'),
         'priority' => 1,
         /* translators: 1: Logo Settings available in  */
-        'description' => sprintf(__('Logo Settings available in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
+        'description' => sprintf(__('Logo Settings available in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
     )
 );
     $wp_customize->add_setting(
@@ -94,7 +94,7 @@ function el_customize_register($wp_customize)
     new WP_Customize_Color_Control($wp_customize, 'color_scheme', array(
         'label' => __('Color Scheme', 'elizama'),
         /* translators: 1: More color options in  */
-        'description' => sprintf(__('More color options in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
+        'description' => sprintf(__('More color options in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
         'section' => 'colors',
         'settings' => 'color_scheme',
     ))
@@ -253,7 +253,7 @@ function el_customize_register($wp_customize)
     $wp_customize->add_section('slider_section', array(
     'title' => __('Slider Settings', 'elizama'),
     /* translators: 1:Featured Image Size Should be ( 1400x446 ) More slider settings available in  */
-    'description' => sprintf(__('Featured Image Size Should be ( 1400x446 ) More slider settings available in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
+    'description' => sprintf(__('Featured Image Size Should be ( 1400x446 ) More slider settings available in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
     'priority' => null,
 ));
 
@@ -539,81 +539,7 @@ function el_customize_register($wp_customize)
     'section' => 'slider_section',
 ));
 
-    /*
-         *
-         *  PAGE BOX
-         *
-         */
-
-    $wp_customize->add_section('page_boxes', array(
-    'title' => __('Homepage Boxes', 'elizama'),
-    /* translators: 1: Featured Image Dimensions : ( 58 X 58 )<br/> Select Featured Image for these pages <br /> How to set featured image  */
-    'description' => sprintf(
-        __('Featured Image Dimensions : ( 58 X 58 )<br/> Select Featured Image for these pages <br /> How to set featured image %s', 'elizama'),
-        sprintf(
-            '<a href="%1$s" target="_blank">%2$s</a>',
-            esc_url('"'.SKT_THEME_FEATURED_SET_VIDEO_URL.'"'),
-            __('Click Here ?', 'elizama')
-        )
-    ),
-    'priority' => null,
-));
-
-    $wp_customize->add_setting(
-    'page-setting1',
-    array(
-        'default' => '0',
-        'capability' => 'edit_theme_options',
-        'sanitize_callback' => 'el_sanitize_integer',
-    )
-);
-
-    $wp_customize->add_control(
-    'page-setting1',
-    array(
-        'type' => 'dropdown-pages',
-        'label' => __('Choose a page for box one:', 'elizama'),
-        'section' => 'page_boxes',
-    )
-);
-
-    $wp_customize->add_setting('page-setting2', array(
-    'default' => '0',
-    'capability' => 'edit_theme_options',
-    'sanitize_callback' => 'el_sanitize_integer',
-));
-
-    $wp_customize->add_control('page-setting2', array(
-    'type' => 'dropdown-pages',
-    'label' => __('Choose a page for box two:', 'elizama'),
-    'section' => 'page_boxes',
-    'setting' => 'marcio',
-));
-
-    $wp_customize->add_setting('page-setting3', array(
-    'default' => '0',
-    'capability' => 'edit_theme_options',
-    'sanitize_callback' => 'el_sanitize_integer',
-));
-
-    $wp_customize->add_control('page-setting3', array(
-    'type' => 'dropdown-pages',
-    'label' => __('Choose a page for box three:', 'elizama'),
-    'section' => 'page_boxes',
-));
-
-    $wp_customize->add_setting('page-setting4', array(
-    'default' => '0',
-    'capability' => 'edit_theme_options',
-    'sanitize_callback' => 'el_sanitize_integer',
-));
-
-    $wp_customize->add_control('page-setting4', array(
-    'type' => 'dropdown-pages',
-    'label' => __('Choose a page for box four:', 'elizama'),
-    'section' => 'page_boxes',
-));
-
+   
     /*
          *
          *  SOCIAL
@@ -623,7 +549,7 @@ function el_customize_register($wp_customize)
     $wp_customize->add_section('social_sec', array(
     'title' => __('Social Settings', 'elizama'),
     /* translators: 1: More social icon available in  */
-    'description' => sprintf(__('More social icon available in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
+    'description' => sprintf(__('More social icon available in %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
     'priority' => null,
 ));
 
@@ -762,7 +688,7 @@ function el_customize_register($wp_customize)
         'title' => __('Layout Settings (PRO Version)', 'elizama'),
         'priority' => null,
         /* translators: 1: Layout Settings available in  */
-        'description' => sprintf(__('Layout Settings available in   %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
+        'description' => sprintf(__('Layout Settings available in   %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
     )
 );
     $wp_customize->add_setting(
@@ -794,7 +720,7 @@ function el_customize_register($wp_customize)
         'priority' => null,
         /* translators: 1: Font Settings available in  */
 
-        'description' => sprintf(__('Font Settings available in   %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
+        'description' => sprintf(__('Font Settings available in   %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_PRO_THEME_URL.'"'), __('PRO Version', 'elizama'))),
     )
 );
     $wp_customize->add_setting(
@@ -826,7 +752,7 @@ function el_customize_register($wp_customize)
         'priority' => null,
         /* translators: 1: For documentation and support check this link  */
 
-        'description' => sprintf(__('For documentation and support check this link %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.SKT_THEME_DOC.'"'), __('elizama Documentation', 'elizama'))),
+        'description' => sprintf(__('For documentation and support check this link %s.', 'elizama'), sprintf('<a href="%1$s" target="_blank">%2$s</a>', esc_url('"'.EL_THEME_DOC.'"'), __('elizama Documentation', 'elizama'))),
     )
 );
     $wp_customize->add_setting(

@@ -5,7 +5,7 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  *
- * @since elizama 0.1
+ * @since elizama 0.3
  *
 *
      * Sets up theme defaults and registers support for various WordPress features.
@@ -105,12 +105,11 @@ function el_scripts_()
 }
 add_action('wp_enqueue_scripts', 'el_scripts_');
 
-define('SKT_URL', 'http://artphotografie.com');
-define('SKT_THEME_URL', 'http://artphotografie.com/themes');
-define('SKT_THEME_URL_DIRECT', 'http://artphotografie.com/shop/elizama-corporate-wordpress-theme/');
-define('SKT_THEME_DOC', 'http://artphotografie.com/documentation/elizama-documentation/');
-define('SKT_PRO_THEME_URL', 'http://artphotografie.com/shop/elizama-corporate-wordpress-theme/');
-define('SKT_THEME_FEATURED_SET_VIDEO_URL', 'https://www.youtube.com/...');
+define('EL_URL', 'https://github.com/Zebedeu/elizama');
+define('EL_THEME_URL', 'https://github.com/Zebedeu/elizama');
+define('EL_THEME_URL_DIRECT', 'https://github.com/Zebedeu/elizama');
+define('EL_THEME_DOC', 'https://github.com/Zebedeu/elizama');
+define('EL_PRO_THEME_URL', 'http://github.com/zebedeu/elizama/');
 
 /*
  * Customizer additions.

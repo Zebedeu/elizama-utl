@@ -3,7 +3,7 @@
  * The template for displaying archive pages.
  *
  * @see https://codex.wordpress.org/Template_Hierarchy
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 get_header();
 ?>

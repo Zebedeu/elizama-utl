@@ -5,7 +5,7 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  *
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 if (!function_exists('el_setup')) :
     /**

@@ -6,7 +6,7 @@
  * and the comment form.
  *
  * @see https://codex.wordpress.org/Template_Hierarchy
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 /*
  * If the current post is protected by a password and

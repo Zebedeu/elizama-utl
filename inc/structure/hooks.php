@@ -6,7 +6,7 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package Elizama
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 // add_action( 'wp_enqueue_scripts', 			'el_woocommerce_scripts',		20 );
 // add_filter( 'woocommerce_enqueue_styles', 	'__return_empty_array' );

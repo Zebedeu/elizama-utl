@@ -5,7 +5,7 @@
  * Contains the closing of the #content div and all content after.
  *
  * @see https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 ?>
 

@@ -7,7 +7,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Elizama
- * @since elizama 0.1
+ * @since elizama 0.3
  */
 ?>
 
