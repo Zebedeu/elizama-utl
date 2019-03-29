@@ -6,7 +6,7 @@
  * and the comment form.
  *
  * @see https://codex.wordpress.org/Template_Hierarchy
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 /*
  * If the current post is protected by a password and
@@ -26,7 +26,7 @@ if (post_password_required()) {
         $comments_number = get_comments_number();
         if (1 === $comments_number) {
             /* translators: %s: post title */
-            printf(esc_html__('One thought on &ldquo;%s&rdquo;', 'elizama'), get_the_title());
+            printf(esc_html__('One thought on &ldquo;%s&rdquo;', 'elizama'), esc_html(get_the_title()));
         } else {
             printf(
                 esc_html(
@@ -40,7 +40,7 @@ if (post_password_required()) {
                     )
                 ),
                 esc_html(number_format_i18n($comments_number)),
-                get_the_title()
+                esc_html(get_the_title())
             );
         }
         ?>

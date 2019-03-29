@@ -209,7 +209,7 @@
         
         // Add slices for slice animations
         var createSlices = function(slider, settings, vars) {
-        	if($(vars.currentImage).parent().is('a')) $(vars.currentImage).parent().css('display','block');
+            if($(vars.currentImage).parent().is('a')) $(vars.currentImage).parent().css('display','block');
             $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').width(slider.width()).css('visibility', 'hidden').show();
             var sliceHeight = ($('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').parent().is('a')) ? $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').parent().height() : $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').height();
 
@@ -247,7 +247,7 @@
         
         // Add boxes for box animations
         var createBoxes = function(slider, settings, vars){
-        	if($(vars.currentImage).parent().is('a')) $(vars.currentImage).parent().css('display','block');
+            if($(vars.currentImage).parent().is('a')) $(vars.currentImage).parent().css('display','block');
             $('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').width(slider.width()).css('visibility', 'hidden').show();
             var boxWidth = Math.round(slider.width()/settings.boxCols),
                 boxHeight = Math.round($('img[src="'+ vars.currentImage.attr('src') +'"]', slider).not('.nivo-main-image,.nivo-control img').height() / settings.boxRows);
@@ -635,7 +635,7 @@
     
     //Default settings
     $.fn.nivoSlider.defaults = {
-        effect: 'sliceUp',
+        effect: 'random',
         slices: 15,
         boxCols: 8,
         boxRows: 4,

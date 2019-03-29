@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-<div id="" class="col-md-8">
+<div id="" class="col-md-9 shadow-lg p-3 mb-4  rounded bg-dark">
 
     <main>
         <?php if (have_posts()) : 
@@ -42,7 +42,7 @@ get_header();
 
     </main><!-- #main -->
 </div><!-- #primary -->
-<div class="col-md-4">
+<div class="col-md-3 shadow-lg p-3 mb-4 bg-dark">
     <?php get_sidebar();?>
 </div>
 <?php  get_footer(); ?>

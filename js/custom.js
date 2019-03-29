@@ -11,25 +11,25 @@ jQuery(window).load(function() {
 });
 	
 // navigation script for responsive
-var el_bowser_width = jQuery(window).width();
-jQuery(document).ready(function() { 
-	jQuery(".main-navigation li a").each(function() {
-		if (jQuery(this).next().length > 0) {
-			jQuery(this).addClass("parent");
-		};
-	})
-	jQuery(".mobile_nav a").click(function(e) { 
-		e.preventDefault();
-		jQuery(this).toggleClass("active");
-		jQuery(".main-navigation").slideToggle('fast');
-	});
-	adjustMenu();
-})
+// var el_bowser_width = jQuery(window).width();
+// jQuery(document).ready(function() { 
+// 	jQuery(".main-navigation li a").each(function() {
+// 		if (jQuery(this).next().length > 0) {
+// 			jQuery(this).addClass("parent");
+// 		};
+// 	})
+// 	jQuery(".mobile_nav a").click(function(e) { 
+// 		e.preventDefault();
+// 		jQuery(this).toggleClass("active");
+// 		jQuery(".main-navigation").slideToggle('fast');
+// 	});
+// 	adjustMenu();
+// })
 // navigation orientation resize callbak
-jQuery(window).bind('resize orientationchange', function() {
-	ww = jQuery(window).width();
-	adjustMenu();
-});
+// jQuery(window).bind('resize orientationchange', function() {
+// 	ww = jQuery(window).width();
+// 	adjustMenu();
+// });
 // navigation function for responsive
 // var adjustMenu = function() {
 // 	if (el_bowser_width < 989) {

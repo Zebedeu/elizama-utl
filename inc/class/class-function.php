@@ -197,7 +197,7 @@ function el_slide()
                 <?php 
                 foreach ($slAr as $sv) {
                     ++$n; ?><img src="<?php echo esc_url($sv['image_src']); ?>" alt="<?php echo esc_attr($sv['image_title']); ?>" title="<?php echo esc_attr('#slidecaption'.$n); ?>" /><?php
-                                                                                                                                                                                        $slideno[] = $n;
+                        $slideno[] = $n;
                 } ?>
             </div><?php
                     foreach ($slideno as $sln) {

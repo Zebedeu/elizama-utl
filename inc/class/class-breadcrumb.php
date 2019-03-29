@@ -176,7 +176,7 @@ if (!class_exists('El_breadcrumb')) {
                         if ($taxonomy->rewrite['with_front'] && $wp_rewrite->front) {
                             $path = trailingslashit($wp_rewrite->front);
                         }
-                        $path .= $taxonomy->rewrite['category'];
+                        // $path .= $taxonomy->rewrite['livro'];
                     }
 
                     /* Get parent pages by path if they exist. */

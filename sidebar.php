@@ -3,7 +3,7 @@
  * The sidebar containing the main widget area.
  *
  * @see https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 if (!is_active_sidebar('right-sidebar')) {
     return;

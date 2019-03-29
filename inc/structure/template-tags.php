@@ -6,7 +6,7 @@
  * Eventually, some of the functionality here could be replaced by core features.
  *
  * @package Elizama
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 
 

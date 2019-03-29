@@ -3,23 +3,21 @@
 Theme Name: Elizama
 Theme URI: https://github.com/Zebedeu/elizama
 Author: Marcio Zebedeu
-Author URI: https://profiles.wordpress.org/marcio-zebedeu
-Description: elizama Theme is a responsive WordPress theme that looks elegant on any devices. It is simple, clean and lightweight WordPress theme based on the most modern technologies like HTML5 and CSS3.
-Version: 0.1
+Description: Elizama Theme is a responsive WordPress theme that looks elegant on any devices. It is simple, clean and lightweight WordPress theme based on the most modern technologies.
+Version: 0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: elizama
-Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-menu, full-width-template, rtl-language-support, sticky-post, theme-options, translation-ready
+Tags: one-column, two-columns, right-sidebar, custom-menu, custom-background, custom-logo, featured-images, threaded-comments, theme-options, translation-ready, blog, e-commerce
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-elizama' is based on Underscores http://underscores.me/, (C) 2012-2015 Marcio Zebedeu, Inc.
+elizama is based on Underscores http://underscores.me/, (C) 2012-2015 Marcio Zebedeu, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-
 /**
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -88,6 +86,8 @@ body {
 
 
 }
+.logo-img {margin-left:160px; padding-top:3%; padding-bottom: 3%; }
+
 .site-branding {
     /*margin-left: 150px;*/
      color: #ffffff;
@@ -318,7 +318,6 @@ button,
 input,
 select,
 textarea {
-    color: #404040;
     font-size: 1.5em;
     line-height: 1.5;
     font-family: "arial";

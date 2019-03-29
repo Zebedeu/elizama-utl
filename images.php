@@ -5,12 +5,12 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  * @package Elizama
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 get_header();
 ?>
  <h5 class="archive-title"><?php el_get_breadcrumb();?></h5>
-<div id="primary" class="content-area">
+<div id="" class="col-md-9 content-area">
     <main id="main" class="site-main" role="main">
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -68,6 +68,8 @@ get_header();
 
     </main><!-- #main -->
 </div><!-- #primary -->
+<div class="col-md-3">
+    <?php get_sidebar(); ?>
+</div>
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php get_footer();?

@@ -5,7 +5,7 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  *
- * @since elizama 0.3
+ * @since elizama 0.4
  *
 *
      * Sets up theme defaults and registers support for various WordPress features.
@@ -14,8 +14,8 @@
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
-add_theme_support('title-tag');
-/*
+    
+    /*
      * This is an example of how to add custom scripts to the options panel.
      * This one shows/hides the an option when a checkbox is clicked.
      *

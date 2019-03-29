@@ -5,7 +5,7 @@
  * This page is implemented using the Settings API
  * http://codex.wordpress.org/Settings_API
  *
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 if (!function_exists('el_setup')) :
     /**
@@ -71,8 +71,6 @@ if (!function_exists('el_setup')) :
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus(array(
             'primary' => esc_html__('Primary Menu', 'elizama'),
-            'secondy' => esc_html__('Secondy Menu', 'elizama'),
-            'Footer' => esc_html__('Footer Menu', 'elizama'),
         ));
 
         /*
@@ -154,7 +152,6 @@ function get_category_id($cat_name)
  */
 function el_scripts()
 {
-    wp_enqueue_style('elizama-bootstrap_css', esc_url(get_template_directory_uri().'/assets/bootstrap/css/bootstrap.css'));
     wp_enqueue_style('elizama-bootstrap_min_css', esc_url(get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css'));
 
     wp_enqueue_style('elizama-style', get_stylesheet_uri());
@@ -163,8 +160,6 @@ function el_scripts()
     wp_enqueue_style('elizama-woocommerce', esc_url(get_template_directory_uri().'/assets/css/woo.css'));
 
     wp_enqueue_style('elizama-efect', esc_url(get_template_directory_uri().'/assets/css/efect.css'));
-    // wp_enqueue_script('elizama-bootstrap_js', esc_url( get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.js'));
-    // wp_enqueue_script('elizama-bootstrap_min_js', esc_url( get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js'));
     wp_enqueue_script('elizama-navigation', esc_url(get_template_directory_uri().'/js/navigation.js'), array(), '20120206', true);
     wp_enqueue_script('elizama-skip-link-focus-fix', esc_url(get_template_directory_uri().'/js/skip-link-focus-fix.js'), array(), '20130115', true);
     if (is_singular() && comments_open() && get_option('thread_comments')) {

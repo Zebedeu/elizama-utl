@@ -101,7 +101,7 @@ function el_customize_register($wp_customize)
 );
 
     $wp_customize->add_setting('color_scheme_header', array(
-    'default' => '#000000',
+    'default' => '#ffffff',
     'sanitize_callback' => 'sanitize_hex_color',
 ));
 
@@ -114,7 +114,7 @@ function el_customize_register($wp_customize)
 );
 
     $wp_customize->add_setting('color_scheme_menu', array(
-    'default' => '#b5b5b5',
+    'default' => '#ce0060',
     'sanitize_callback' => 'sanitize_hex_color',
 ));
 
@@ -170,7 +170,7 @@ function el_customize_register($wp_customize)
 );
 
     $wp_customize->add_setting('color_scheme_footer_widght', array(
-    'default' => '#b5b5b5',
+    'default' => '#000000',
     'sanitize_callback' => 'sanitize_hex_color',
 ));
 
@@ -204,35 +204,12 @@ function el_customize_register($wp_customize)
         'capability' => 'edit_theme_options',
     )
 );
-    $wp_customize->add_control(
-    new el_Info($wp_customize, 'cred_section', array(
-        'section' => 'footer_text',
-        'label' => __('To remove credit &amp; copyright text upgrade to PRO version', 'elizama'),
-        'settings' => 'el_options[credit-info]',
-    ))
-);
 
-    $wp_customize->add_setting('footer_right', array(
-    'default' => __('<a href="#">Home</a> | <a href="#">Contact Us</a> | <a href="#">Sitemap</a>', 'elizama'),
-    'sanitize_callback' => 'format_for_editor',
-));
-
-    $wp_customize->add_control(
-    new WP_Customize_Textarea_Control(
-        $wp_customize,
-        'footer_right',
-        array(
-            'label' => __('Footer right text', 'elizama'),
-            'section' => 'footer_text',
-            'setting' => 'footer_right',
-        )
-    )
-);
 
     // FOOTER COPY
 
     $wp_customize->add_setting('color_scheme_footer_copy', array(
-    'default' => '#ce0060',
+    'default' => '#000000',
     'sanitize_callback' => 'sanitize_hex_color',
 ));
 
@@ -621,7 +598,7 @@ function el_customize_register($wp_customize)
 ));
 
     $wp_customize->add_setting('contact_desc', array(
-    'default' => __('Sed suscipit mauris nec mauris vulputate, a posuere libero congue. Nam laoreet elit eu erat pulvinar, et efficitur nibh euismod.Nam metus lorem, hendrerit quis ante eget, lobortis elementum neque. Aliquam in ullamcorper quam. Integer euismod ligula in mauris vehic.', 'elizama'),
+    'default' => __('If you have any questions don\'t hesitate to contact us', 'elizama'),
     'sanitize_callback' => 'format_for_editor',
 ));
 
@@ -638,7 +615,7 @@ function el_customize_register($wp_customize)
 );
 
     $wp_customize->add_setting('contact_add', array(
-    'default' => __('Rua Diolinda Rodrigues, Bairro Comercial, Huila, Lubango', 'elizama'),
+    'default' => __('Street Address,State,  City', 'elizama'),
     'sanitize_callback' => 'format_for_editor',
 ));
 
@@ -655,7 +632,7 @@ function el_customize_register($wp_customize)
 );
 
     $wp_customize->add_setting('contact_no', array(
-    'default' => __('+244 913 750 140', 'elizama'),
+    'default' => __('+123 456 7890', 'elizama'),
     'sanitize_callback' => 'sanitize_text_field',
 ));
 
@@ -666,7 +643,7 @@ function el_customize_register($wp_customize)
 ));
 
     $wp_customize->add_setting('contact_mail', array(
-    'default' => 'contacto@artphoweb.com',
+    'default' => 'contact@example.com',
     'sanitize_callback' => 'sanitize_email',
 ));
 
@@ -844,13 +821,14 @@ function el_custom_css()
     .add-icon,
     .phone-icon,
     .mail-icon,
+    .added_to_cart,
     button,
     .pagination ul li .current,
     .pagination ul li a:hover {
         background-color: <?php echo esc_html(get_theme_mod('color_scheme', '#ce0060')); ?>
     }
 
-    #primary {
+    #primary, .added_to_cart {
         color: <?php echo esc_html(get_theme_mod('color_scheme_content', '#000000')); ?>
     }
 </style>

@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.9
 Tested up to: 5.1.1
-Stable tag: 0.3
+Stable tag: 0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,9 +34,11 @@ elizama' includes support for Infinite Scroll in Jetpack.
 
 = 0.2 =
 * Misc changes.
-
 = 0.3 =
 * correction of constants
+= 0.4 =
+* fix Design
+
 == Credits ==
 
 Underscores ( _s )
@@ -46,10 +48,6 @@ https://underscores.me
 Bootstrap 4 Grid
 License: CC0 1.0 Universal (CC0 1.0)
 https://getbootstrap.com
-
-Genericons Neue
-License: CC0 1.0 Universal (CC0 1.0)
-http://genericons.com
 
 Slider image, Copyright Alexandra Stan
 License: CC0 1.0 Universal (CC0 1.0)

@@ -8,12 +8,12 @@
  * different template.
  *
  * @see https://codex.wordpress.org/Template_Hierarchy
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 get_header();
 ?>
 
-<div id="primary" class="content-area">
+<div id="" class="col-md-9 content-area">
     <h5 class="archive-title"><?php echo esc_html(do_action('get_breadcrumb')); ?></h5>
     <main id="main" class="site-main" role="main">
         <?php if (have_posts()) : ?>
@@ -26,5 +26,8 @@ get_header();
     </main><!-- #main -->
     <?php endif; ?>
 </div><!-- #primary -->
+<div class="col-md-3">
+    <?php get_sidebar(); ?>
+</div>
 
-<?php get_footer(); ?> 
+<?php get_footer();?

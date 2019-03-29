@@ -16,7 +16,7 @@ Template Name: FAQ
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Elizama
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 get_header();
 ?>

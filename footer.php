@@ -5,7 +5,7 @@
  * Contains the closing of the #content div and all content after.
  *
  * @see https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 ?>
 
@@ -15,30 +15,30 @@
     <div class="site-footer" role="contentinfo">
         <div class="about-footer">
             <div class="cols">
-                <h2><?php echo esc_html(get_theme_mod('contact_title', __('Contact elizama', 'elizama'))); ?></h2>
+                <h2><?php echo esc_html(get_theme_mod('contact_title')); ?></h2>
                 <?php if (get_theme_mod('contact_desc')) {
     ?>
-                <p><?php echo esc_html(get_theme_mod('contact_desc', __('If you have any questions don\'t hesitate to contact us', 'elizama'))); ?></p>
+                <p><?php echo esc_html(get_theme_mod('contact_desc')); ?></p>
                 <?php
 } ?>
                 <?php if (get_theme_mod('contact_add')) {
         ?>
                 <div class="add-icon"></div><!-- add-icon -->
-                <div class="add-content"><?php echo esc_html(get_theme_mod('contact_add', __('Rua Diolinda Rodrigues, Bairro Comercial, Huila, Lubango', 'elizama'))); ?></div><!-- add-content -->
+                <div class="add-content"><?php echo esc_html(get_theme_mod('contact_add')); ?></div><!-- add-content -->
                 <div class="clear"></div>
                 <?php
     } ?>
                 <?php if (get_theme_mod('contact_no')) {
         ?>
                 <div class="phone-icon"></div><!-- phone-icon -->
-                <div class="phone-content"><?php echo esc_html(get_theme_mod('contact_no', __('+123 456 7890', 'elizama'))); ?></div><!-- phone-content -->
+                <div class="phone-content"><?php echo esc_html(get_theme_mod('contact_no')); ?></div><!-- phone-content -->
                 <div class="clear"></div>
                 <?php
     } ?>
                 <?php if (get_theme_mod('contact_mail')) {
         ?>
                 <div class="mail-icon"></div><!-- mail-icon -->
-                <div class="mail-content"><a href="mailto:<?php echo esc_html(get_theme_mod('contact_mail', 'contacto@artphoweb.com')); ?>"><?php echo esc_html(get_theme_mod('contact_mail', 'contacto@artphoweb.com')); ?></a></div><!-- mail-content -->
+                <div class="mail-content"><a href="mailto:<?php echo esc_html(get_theme_mod('contact_mail', 'contact@example.com')); ?>"><?php echo esc_html(get_theme_mod('contact_mail')); ?></a></div><!-- mail-content -->
                 <div class="clear"></div>
                 <?php
     } ?>
@@ -70,35 +70,33 @@
                 <div class="social">
                     <?php if (get_theme_mod('fb_link') != '') {
                     ?>
-                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('fb_link', '#facebook')); ?>" title="Facebook">
+                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('fb_link', '#facebook')); ?>" title="<?php esc_attr_e('Facebook', 'elizama'); ?>">
                     <span><?php esc_html_e('Facebook', 'elizama'); ?></span>
                     </a>
                     <?php
                 } ?>
                     <?php if (get_theme_mod('twitt_link') != '') {
                     ?>
-                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('twitt_link', '#twitter')); ?>" title="Twitter">
+                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('twitt_link', '#twitter')); ?>" title="<?php esc_attr_e('Twitter', 'elizama'); ?>">
                     <span><?php esc_html_e('Twitter', 'elizama'); ?></span>
                     </a>
                     <?php
                 } ?>
                     <?php if (get_theme_mod('gplus_link') != '') {
                     ?>
-                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('gplus_link', '#gplus')); ?>" title="Google Plus">
+                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('gplus_link', '#gplus')); ?>" title="<?php esc_attr_e('Google Plus', 'elizama'); ?>">
                     <span><?php esc_html_e('Google +', 'elizama'); ?></span>
                     </a>
                     <?php
                 } ?>
                     <?php if (get_theme_mod('linked_link') != '') {
                     ?>
-                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('linked_link', '#linkedin')); ?>" title="Linkedin">
+                    <a target="_blank" href="<?php echo esc_url(get_theme_mod('linked_link', '#linkedin')); ?>" title="<?php esc_attr_e('Linkedin', 'elizama'); ?>">
                     <span><?php esc_html_e('Linkedin', 'elizama'); ?></span></a>
 
                     <?php
                 } ?>
-
-                    
-
+                
                 </div><!-- social -->
             </div><!-- cols -->
             <?php dynamic_sidebar('sidebar-4'); ?>
@@ -106,18 +104,10 @@
     </div><!-- site-footer -->
 
     <div class="site-info">
-        <p><a href="<?php echo esc_url(home_url()); ?>"><?php esc_html(bloginfo('name')); ?></a> &copy; <?php echo esc_html(date('Y')); ?> - <?php
-                    /* translators: 1: All rights reserved  */
+            <p class="copyright"><?php 
+            /* translators: 1: Current Year, 2: Blog Name 3: Theme Developer 4: WordPress. */
+            printf(esc_html__('Copyright &copy; %1$s %2$s All Right Reserved. Theme By %3$s . Proudly powered by %4$s .', 'elizama'), esc_attr(date('Y')), esc_html(get_bloginfo('name')), '<a href="https://github.com/Zebedeu/elizama">Marcio Zebedeu</a>', '<a href="https://wordpress.org">WordPress</a>'); ?></p>
 
-                                                                                                                                                    printf(esc_html__('All rights reserved', 'elizama'), 'elizama'); ?><br />
-            <a href="<?php echo esc_url(__('https://github.com/Zebedeu/fw-elizama', 'elizama')); ?>"><?php 
-                                                                                                        /* translators: 1: Proudly powered by  */
-
-                                                                                                        printf(esc_html__('Proudly powered by %s', 'elizama'), 'ARTPHOTOGRAFIE'); ?></a>
-            <?php 
-            /* translators: 1: Proudly powered by */
-            printf(esc_html__('Theme: %1$s by %2$s.', 'elizama'), 'elizama', '<a href="https://github.com/Zebedeu/elizama" rel="designer">Marcio Zebedeu</a>'); ?><br />
-            <?php echo get_theme_mod('footer_right', esc_url( __('<a href="https://github.com/Zebedeu/elizama">Home</a> | <a href="http://artphoweb.com/contactos/">Contact Us</a> | <a href="#">Sitemap</a>', 'elizama'))); ?></p>
 
     </div><!-- .site-info -->
 </footer><!-- #colophon -->
@@ -126,7 +116,5 @@
 <?php wp_footer();
 ?>
 </div><!-- #base -->
-
 </body>
-
 </html> 

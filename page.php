@@ -8,11 +8,11 @@
  * different template.
  *
  * @see https://codex.wordpress.org/Template_Hierarchy
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 get_header();
 ?>
-<div id="" class=" col-md-8">
+<div id="" class=" col-md-9">
     <h5 class="archive-title"><?php echo esc_html(do_action('get_breadcrumb')); ?></h5>
 
     <main id="main" class="site-main row" role="main">
@@ -22,7 +22,7 @@ get_header();
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<div class="col-md-4">
+<div class="col-md-3">
     <?php get_sidebar(); ?>
 </div>
 

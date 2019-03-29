@@ -3,7 +3,7 @@
  * Template part for displaying a message that posts cannot be found.
  *
  * @see https://codex.wordpress.org/Template_Hierarchy
- * @since elizama 0.3
+ * @since elizama 0.4
  */
 ?>
 

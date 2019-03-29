@@ -127,11 +127,10 @@ if (!function_exists('el_admin_header_image2')):
     function el_admin_header_image2()
     {
         ?>
-	        <div id="headimg">
 	            <?php if (get_header_image()): ?>
 	                <img src="<?php header_image(); ?>" alt="">
 	            <?php endif; ?>
-        </div>
+        
         <?php
     }
 
